@@ -1,0 +1,12 @@
+services:
+  queries_challenge:
+    image: postgres
+    container_name: queries_challenge
+    restart: always
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_USER=docker
+      - POSTGRES_DB=queries_challenge
+
